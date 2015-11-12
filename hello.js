@@ -1,9 +1,22 @@
+var http = require('http');
+var url = process.argv[2];
+http.get(url, function(response){
+  response.setEncoding('utf8');
+  response.on("data", function(data){
+    console.log(data);
+  });
+  responses
+});
+
+
+
 //Challenge Make it Modular!!
 // var mine = require('./mine.js')
-// console.log( mine(process.argv[2], process.argv[3]) );
-//
-//
-
+// mine(process.argv[2], process.argv[3], function(err, files){
+//   for (i = 0; i < files.length; i++){
+//     console.log(files[]);
+//   }
+// })
 
 //Challenge Filtered ls
 // var fs = require('fs');
@@ -18,7 +31,6 @@
 //
 //
 
-  
 //Challenge: My first async io!
 // var fs = require('fs');
 // var lines = 0;
@@ -28,19 +40,14 @@
 //   console.log(lines);
 // });
 
-
 // var lines = file.split('\n').length - 1;
 // console.log(lines);
-
-
 
 // //Challenge: Basic I/O
 // var fs = require('fs')
 //
 // var filebuffer = fs.readFileSync(process.argv[2]).toString()
 // console.log(filebuffer.split('\n').length - 1)
-
-
 
 //Challenge : Baby Steps
 // var n = 0;

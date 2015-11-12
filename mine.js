@@ -1,8 +1,17 @@
 // var fs = require('fs')
+// module.exports = function(filename, extension, callback){
+//   fs.readdir(filename, function(err, files){
+//     if (err) return callback(err, null);
+//     list = []
+//     for (i = 0; i < files.length; i++){
+//       if (files[i].split('.')[1] == extension){
+//         list.push(files[i]);
+//       }
+//     }
+//     callback(null, list);
+//   })
 //
-// exports.filter =
-
-
+// }
 
 //   var fs = require('fs');
 //   fs.readdir(process.argv[2] , function (err, files){
